@@ -95,7 +95,7 @@ end
 function pre_process_service_msg(msg)
    if msg.service then
       local action = msg.action or {type=""}
-      -- Double ! to discriminate of normal actions
+      -- Double ! to discriminate osf normal actions
       msg.text = "!!tgservice " .. action.type
 
       -- wipe the data to allow the bot to read service messages
@@ -226,7 +226,7 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(king_falsee)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
